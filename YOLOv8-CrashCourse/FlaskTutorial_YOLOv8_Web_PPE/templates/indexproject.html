@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ObjectDetection-YOLOv8</title>
+    <style>
+        body{
+        font-family:Helvetica, sans-serif;
+        margin:0px;
+        padding:0px;
+        }
+        header.feature-box.right{
+        background-color:black;
+        color:white;
+        height:120px;
+        padding:5px;
+        text-align:right;
+        }
+        header.feature-box.below{
+        height:800px;
+        background-color:blue;
+        margin-top:-30px;
+        background-image:url("../static/images/1.png");
+        background-size:100%;
+        background-position:center;
+        }
+        ul{
+        list-style:none;
+        padding:0px;}
+        li{
+        display:inline-block;
+        background-color:gray;
+        border-radius:10px;
+        padding:10px;
+        margin:10px;
+        }
+        li:hover{
+        background-color:red;
+        margin:10px;
+        }
+        header a{
+        color:white;
+        text-decoration:none;
+        width:100%;
+        }
+        .details{
+        height:80px;
+        margin:40px;
+        padding:0px;
+        font-size:40px;
+        background-color:gray;
+        text-align:center;
+        color:black;
+        }
+
+
+        .features{
+        background:white;
+        color:gray;
+        display:flex;
+        flex-direction:row;
+        padding:20px;
+
+        }
+        .features figure
+        {/*background:pink;*/
+        width:400px;
+        margin:auto;
+        text-align:center;
+        text-transform:uppercase;
+        }
+        .features figure img{
+        border-radius:10%;
+        width:400px;
+        }
+        div.main{
+        display:flex;
+        margin:40px;
+        letter-spacing:1px;
+        h1, h2, h3, h4, h5, h6 {
+          font-family: "Playfair Display";
+    letter-spacing: 5px;
+        }
+        }
+        .subpart2{
+        text-align:center;
+        text-transform:uppercase;
+        }
+        .subpart2 figure img{
+        border-radius:4%;
+        width:800px;
+        }
+        .contactpage{
+        margin:20px;
+        }
+        #textbox {
+       font-size: 18pt;
+        height: 42px;
+        width : 1000px;
+        }
+        #textboxes {
+       font-size: 18pt;
+        height: 42px;
+        width : 1000px;
+        }
+        footer{
+        background-color:black;
+        text-align:center;
+        margin:0px;
+        padding:0px;
+        color:white;
+        font-size:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="feature-box right">
+        <nav>
+            <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/FrontPage">Video</a></li>
+            <li><a href="/webcam">LiveWebcam</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="feature-box below">
+    </header>
+
+
+    <section class="details">
+        <h1>Sample Results</h1>
+
+    </section>
+    <section class="features">
+        <figure>
+            <img src="../static/images/1.png" alt="YOLOv8 Results 1">
+            <figcaption>YOLOv8 Results 1</figcaption>
+        </figure>
+        <figure>
+            <img src="../static/images/2.png" alt="YOLOv8 Results 2">
+            <figcaption>YOLOv8 Results 2</figcaption>
+        </figure>
+        <figure>
+            <img src="../static/images/3.png" alt="YOLOv8 Results 3">
+            <figcaption>YOLOv8 Results 3</figcaption>
+    </figure>
+    </section>
+    <div class="main">
+        <div class="subpart1">
+            <h1>Object Detection using YOLOv8</h1><br>
+            <h4> FPS of Video</h4>
+            <p>FPS represents the Frame Rate, in case of GPU the FPS will be high while in case of CPU the FPS will be low</p><br>
+            <h4>Shape of Current Frame</h4>
+            <p>The shape of current frame i.e. Resolution will be calculated</p><br>
+            <h4>Detections in Current Frame</h4>
+            <p>Total detections in each of the frame will be calculated</p><br>
+
+        </div>
+
+      <div class="subpart2"><figure>
+      <img src="../static/images/1.png"  alt="Image Missing">
+          <figcaption>Sample Results</figcaption>
+        </figure>
+      </div>
+  </div>
+
+<div class="contactpage">
+    <h1>Contact</h1><br>
+    <p>In case of any query do let me know</p>
+        <form action="/action_page.php" target="_blank" >
+            <p><input type="text" placeholder="Name"  required name="Name"  id="textbox"></p>
+            <p><input type="text" placeholder="Email ID" required name="Email ID" id="textboxes"></p>
+            <p><button type="submit">SEND MESSAGE</button></p>
+        </form>
+</div>
+
+<footer>
+    <p>YOLOv8 Lecture Series <a href="https://www.youtube.com/channel/UC--6PuiEdiQY8nasgNluSOA" title="YouTube Channel"> YouTube Channel</a></p>
+</footer>
+</body>
+</html>
