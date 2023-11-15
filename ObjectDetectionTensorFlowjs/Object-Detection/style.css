@@ -1,0 +1,83 @@
+/* Complete Page */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+/* Main Page */
+.main-page{
+    display: flex;
+}
+/* Side Line */
+.sideLine{
+    width: 2%;
+    height:100vh;
+    background-color: lightblue;
+}
+/* Side Bar */
+.sideBar{
+    width: 15%;
+    height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 1px 10px 10px rgb(107, 132, 132);
+}
+
+/* Circle */
+.circle{
+    background-color: grey;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Right Panel */
+.rightPanel{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Header */
+.header{
+    background-color: royalblue;
+    height: 90px;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(107, 132, 132);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 2rem;
+}
+/* Tablet Area */
+.tabletContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#tablet-image{
+    position: absolute;
+}
+#main-canvas{
+    position: absolute;
+    z-index: -1;
+}
